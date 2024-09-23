@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab</title>
+  <style>
+body {
+    font-family: 'Chewy', cursive;
+    background-image: url('images/l.jpg');
+    background-repeat: no-repeat; /* Prevents background from repeating */
+    background-size: cover; /* Ensures the background covers the entire page */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    color: #F5F5F5; /* Light Text */
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1F1F1F; /* Darker Header Background */
+}
+
+.header-left {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-center a {
+    margin: 0 10px;
+}
+
+.header-center img {
+    height: 30px;
+    width: 30px;
+}
+
+.header-right img {
+    height: 50px;
+    width: 50px;
+}
+
+.tara-animation {
+    font-size: 48px;
+    text-align: center;
+    margin: 20px 0;
+    animation: popUp 2s infinite;
+}
+
+@keyframes popUp {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    border: 5px solid #333333; /* Dark Border */
+    padding: 10px;
+    width: auto;
+    height: 300px; /* Adjust this height as needed */
+}
+
+.cool-text {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.live-button, .make-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #333333; /* Dark Button Background */
+    color: #F5F5F5; /* Light Button Text */
+    transition: background-color 0.3s ease;
+}
+
+.live-button:hover, .make-button:hover {
+    background-color: #555555; /* Lighter Button Background on Hover */
+}
+
+.image-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 20px;
+    scroll-snap-type: x mandatory; /* Optional: enables snap scrolling */
+}
+
+.scroll-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-scroll {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.scroll-item {
+    flex: 0 0 auto;
+    width: 500px;
+}
+
+.scroll-item img {
+    width: 100%;
+    border: 2px solid #333;
+    padding: 5px;
+}
+
+.scroll-left, .scroll-right {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    z-index: 1;
+}
+
+.scroll-left {
+    left: 0;
+}
+
+.scroll-right {
+    right: 0;
+}
+
+.scroll-left:hover, .scroll-right:hover {
+    background-color: #555;
+}
+
+.content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 4px black;
+    }
+
+.back {
+      margin-top: 20px;
+      margin-left: 700px;
+      font-size: 1.8rem;
+      font-family: 'Creepster', cursive;
+      cursor: pointer;
+      transition: color 0.3s, transform 0.3s ease, text-shadow 0.3s ease;
+      text-shadow: 0 0 5px red;
+      animation: pulse 2s infinite;
+      position:fixed
+    }
+
+
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-left">$catwin</div>
+    <div class="header-center">
+        <a href="https://x.com/charles_catwin_" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+        <a href="https://t.me/+7e0VmD3ezMY1Mzg0" target="_blank"><img src="images/tgg.jpg" alt="Telegram"></a>
+        <a href="https://t.me/+7e0VmD3ezMY1Mzg0" target="_blank"><img src="images/pumpfun.png" alt="Pumpfun"></a>
+    </div>
+    <div class="header-right">
+        <img src="images/6b8a80fcf949bab484b4c8819f0aedf9.jpg" alt="Logo">
+    </div>
+</header>
+<main>
+    <div class="tara-animation">Charles Catwin</div>
+    <div class="image-container">
+        <img src="images/6b8a80fcf949bab484b4c8819f0aedf9.jpg" alt="Cool Image">
+    </div>
+    <div class="cool-text">
+        "<strong>Charles Catwin<strong>  :
+
+Born by accident here i am, Catwin. today i want to share my new discovery: the theory of natural selection where new species comes out from older one. i am a demonstration, here are some of my students:
+    </div>
+    <div class="buttons">
+        <button class="live-button">LIVE ON PUMPFUN</button>
+        <button class="make-button">CA HERE</button>
+    </div>
+    <div class="scroll-container">
+        <button class="scroll-left" onclick="scrollLeft()">&#10094;</button>
+        
+        <div class="image-scroll">
+            <div class="scroll-item"><img src="images/07bbcbbe0b0dcd867e487c9a3765c527.jpg" alt="Image 1"></div>
+            <div class="scroll-item"><img src="images/0bdac39607808fd766f05a76cf12c4f5.jpg" alt="Image 2"></div>
+            <div class="scroll-item"><img src="images//4feb7a2b691ddff1e8f2468d11e5d167.jpg" alt="Image 3"></div>
+            <div class="scroll-item"><img src="images/d44c611f5f7b2931d706022a12bca3ef.jpg" alt="Image 4"></div>
+            <div class="scroll-item"><img src="images/b2bee23f9ceae39305ed2c6b6539da37.jpg" alt="Image 5"></div>
+            <div class="scroll-item"><img src="images/c933805ded76c06b70e5079649dc5f67.jpg" alt="Image 6"></div>
+        </div>
+        
+        <button class="scroll-right" onclick="scrollRight()">&#10095;</button>
+    </div>    
+    <div class="back" onclick="window.location.href='index.html';">Back</div> <!-- Back button -->
+  </div>
+</main>
+<script>
+    function scrollLeft() {
+        document.querySelector('.image-scroll').scrollBy({
+            left: -300, // Adjust the scroll distance as needed
+            behavior: 'smooth'
+        });
+    }
+
+    function scrollRight() {
+        document.querySelector('.image-scroll').scrollBy({
+            left: 200, // Adjust the scroll distance as needed
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+
+
+</body>
+</html>
